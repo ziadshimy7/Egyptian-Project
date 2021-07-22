@@ -1,0 +1,290 @@
+body {
+  min-height: 100vh;
+  max-width: 1100px;
+  background-color: black;
+  margin: 0 auto;
+}
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+.container-fluid {
+  background-color: #b0efeb;
+  max-width: 100%;
+}
+.Saqqara {
+  background-color: #e4efe7;
+  padding-top: 80px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.album {
+  background-color: #e4efe7;
+}
+/* Headings */
+
+.big-heading {
+  font-family: "Reggae One", cursive;
+  font-size: 1rem;
+}
+
+.section-heading {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.hidden {
+  display: none;
+}
+.h2text {
+  font-size: 1.7rem;
+  line-height: 1.7;
+  font-family: "Ubuntu";
+  color: black;
+}
+.Buttons {
+  font-size: 0.9rem;
+  font-family: "Ubuntu";
+  color: #007bff;
+  text-align: left;
+  font-weight: bold;
+}
+.cards {
+  font-size: 1.1rem;
+  font-family: "Reggae One", cursive;
+  color: black;
+  text-align: left;
+}
+.cards-heading {
+  font-size: 1.1rem;
+  font-family: "Ubuntu";
+  color: black;
+  text-align: left;
+  font-weight: bold;
+}
+.card-text {
+  font-size: 0.9rem;
+  font-family: "Ubuntu";
+  color: black;
+  text-align: left;
+  font-weight: bold;
+}
+.white-section {
+  background-color: #e4efe7;
+}
+.container {
+  background-color: #e4efe7;
+  font-family: "Ubuntu";
+  max-width: 100%;
+}
+.comment-bar {
+  width: 100%;
+  height: 200px;
+}
+.butt {
+  margin-left: 250px;
+}
+
+.view-btn {
+  margin-left: 30px;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0px 5px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+/* .form-control{
+  width: 130px;
+  height: 30px;
+} */
+.colored-section {
+  background-color: #b0efeb;
+}
+.zoz {
+  text-align: left;
+}
+.header-color {
+  background-color: rgb(224, 70, 122);
+}
+.comment-section-color {
+  background-color: #7bdbd5;
+}
+.pompa {
+  font-family: "Reggae One", cursive;
+  text-align: center;
+}
+.pompa1 {
+  font-family: "Ubuntu";
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.middlecont {
+  width: 100%;
+  height: 350px;
+  margin-left: 10px;
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+  text-align: left;
+}
+.h1first {
+  color: #ef8172;
+}
+
+.container-fluid {
+  padding: 0% 0%;
+}
+.carousel-inner {
+  width: 100%;
+  height: 50%;
+}
+
+.part3 {
+  background-color: #e4efe7;
+}
+.col-md-7 {
+  padding-top: 150px;
+}
+.featurette-image {
+  padding: 30px 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 8rem;
+}
+.featurette-heading {
+  padding: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+.Matroh {
+  padding-top: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #b6c9f0;
+}
+.icon:hover {
+  color: #a0937d;
+}
+
+/* reviews*/
+
+#testimonials {
+  background-color: #b0efeb;
+
+  height: 400px;
+}
+
+.testimonial-text {
+  font-size: 1.7rem;
+  line-height: 1.7;
+  font-family: "Ubuntu";
+}
+
+.testimonial-image {
+  width: 150px;
+  height: 150px;
+  margin: 40px;
+  border-radius: 2rem;
+}
+
+#press {
+  background-color: #e4efe7;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* CTA Section */
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+.item img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  min-height: 572px;
+  background: rgba(0, 0, 0, 0.7);
+}
+.carousel-caption {
+  top: 0px;
+  padding-top: 0px;
+  position: static;
+}

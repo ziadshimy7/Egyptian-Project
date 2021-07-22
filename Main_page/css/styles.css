@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 1150px;
+  background-color: black;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+.welcome-text-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.welcome-user {
+  margin-top: 1rem;
+  font-family: "Reggae One", cursive;
+  font-size: 1rem;
+}
+.big-heading {
+  font-family: "Reggae One", cursive;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #a35709;
+  padding-right: 500px;
+  margin-top: 100px;
+}
+
+.section-heading {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.hidden {
+  display: none;
+}
+.white-section {
+  background-color: #e4efe7;
+}
+
+/* Navigation Bar */
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0px 5px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+.form-control {
+  width: 130px;
+  height: 30px;
+}
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+  text-align: left;
+}
+.h1first {
+  color: #ef8172;
+}
+
+.container-fluid {
+  padding: 0% 0%;
+}
+.carousel-inner {
+  width: 100%;
+  height: 50%;
+}
+
+.part3 {
+  background-color: #e4efe7;
+}
+.col-md-7 {
+  padding-top: 150px;
+}
+.featurette-image {
+  padding: 30px 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 8rem;
+}
+.featurette-heading {
+  padding: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+.Matroh {
+  padding-top: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #b6c9f0;
+}
+.icon:hover {
+  color: #a0937d;
+}
+
+/* reviews*/
+
+#testimonials {
+  background-color: #b0efeb;
+
+  height: 400px;
+}
+
+.testimonial-text {
+  font-size: 1.7rem;
+  line-height: 1.7;
+  font-family: "Ubuntu";
+}
+
+.testimonial-image {
+  width: 150px;
+  height: 150px;
+  margin: 40px;
+  border-radius: 2rem;
+}
+
+#press {
+  background-color: #e4efe7;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* CTA Section */
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+.item img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  min-height: 572px;
+  background: rgba(0, 0, 0, 0.7);
+}
+.carousel-caption {
+  top: 0px;
+  padding-top: 0px;
+}
+.modal-login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50rem;
+  background-color: #ffed99;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+  border-radius: 3.8rem;
+  transition: all 0.5s;
+}
+.overlay-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.modal__header {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Reggae One", cursive;
+  transition: all 0.5s;
+}
+
+.modal__form {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.5s;
+}
+
+.modal__form label {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Ubuntu";
+  transition: all 0.5s;
+}
+
+.modal__form input {
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-family: "Ubuntu";
+  transition: all 0.5s;
+}
+
+.modal__form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+  transition: all 0.5s;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.5s;
+}
+.signup {
+  display: inline-block;
+  white-space: nowrap;
+}
+.log {
+  font-family: "Ubuntu";
+  font-size: 1rem;
+}
+.hidden-1 {
+  visibility: hidden;
+  opacity: 0;
+}
+.modal-register {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50rem;
+  background-color: #ffed99;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+  border-radius: 3.8rem;
+  transition: all 0.5s;
+}
+.for_slick_slider {
+  display: flex;
+}
+
+.slick_slider {
+  background-color: #e4efe7;
+}
+.control-c {
+  height: 30px;
+  width: 30px;
+}
+
+.for_slick_slider .items {
+  width: 350px;
+  height: 250px;
+  margin: 50px;
+  position: relative;
+}
+.for_slick_slider .items .overlay {
+  width: 350px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.64);
+}
+.for_slick_slider .slick-center .overlay {
+  opacity: 0;
+}
+.for_slick_slider .items img {
+  width: 350px;
+  height: 250px;
+  transition: all linear 0.4s;
+}
+.for_slick_slider .slick-center img {
+  transform: scale(1.2);
+}
+.font {
+  font-size: 1.5rem;
+  font-family: Ubuntu;
+  text-align: center;
+}
+.header {
+  font-size: 2rem;
+  font-family: Ubuntu;
+  text-align: center;
+}
+.center {
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+}
