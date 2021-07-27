@@ -1,5 +1,10 @@
-<?php 
+<?php
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
+
 include "../register_login/connection.php";
+function read () {
+global $connection;
 $query_api="SELECT * FROM  monuments";
 $results_api=mysqli_query($connection,$query_api);
 $row_count=mysqli_num_rows($results_api);
@@ -23,3 +28,5 @@ else {
         "message"=>"No items found ! "
     ));
 };
+}
+read();
