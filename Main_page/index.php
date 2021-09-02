@@ -251,5 +251,5 @@ if(isset($_POST['submit'])){
 
   <!-- Footer -->
 
- <?php include "footer.php" ?>
+ <?php include "../utilities/footer.php" ?>
  <script src="../js/main.js" ></script>

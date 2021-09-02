@@ -56,51 +56,52 @@ document.addEventListener("keydown", function (e) {
   }
 });
 // APIS FUNCTIONS
-// const weather = function (data) {
-//   const html = `
-//   <div class="col">
-//     <div class="card mb-4 box-shadow h-100">
-//   <div class="card-header">
-//       <h4 class="my-0 font-weight-normal header">Weather</h4>
-//    </div>
-//    <div class="card-body">
-//       <h1 class="card-title pricing-card-title font">${data.name}: ${data.main.temp}<img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png
-//       "></i></h1>
+const weather = function (data) {
+  const html = `
+  <div class="col">
+    <div class="card mb-4 box-shadow h-100">
+  <div class="card-header">
+      <h4 class="my-0 font-weight-normal header">Weather</h4>
+   </div>
+   <div class="card-body">
+      <h1 class="card-title pricing-card-title font">${data.name}: ${data.main.temp}<img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png
+      "></i></h1>
 
-//    </div>
-//    <a href="https://www.accuweather.com/en/eg/cairo/127164/weather-forecast/127164" target="_blank" <button type="button" class="btn btn-lg btn-block btn-secondary">More weather information</button></a>
-//   </div>
-//   </div>`;
+   </div>
+   <a href="https://www.accuweather.com/en/eg/cairo/127164/weather-forecast/127164" target="_blank" <button type="button" class="btn btn-lg btn-block btn-secondary">More weather information</button></a>
+  </div>
+  </div>`;
 
-//   generalInfo.insertAdjacentHTML("beforeend", html);
-// };
-// const currency = function (data) {
-//   const html = `<div class="col">
-//     <div class="card mb-4 box-shadow h-100">
-//   <div class="card-header">
-//       <h4 class="my-0 font-weight-normal header">Currency</h4>
-//    </div>
-//    <div class="card-body">
-//       <h1 class="card-title pricing-card-title font">1 USD $ = ${data.egp} EGP</h1>
-//       <p class="font">Date: ${data.date}</p>
+  generalInfo.insertAdjacentHTML("beforeend", html);
+  console.log(html);
+};
+const currency = function (data) {
+  const html = `<div class="col">
+    <div class="card mb-4 box-shadow h-100">
+  <div class="card-header">
+      <h4 class="my-0 font-weight-normal header">Currency</h4>
+   </div>
+   <div class="card-body">
+      <h1 class="card-title pricing-card-title font">1 USD $ = ${data.egp} EGP</h1>
+      <p class="font">Date: ${data.date}</p>
 
-//    </div>
-//    <a href="https://www.banquemisr.com/en/exchangerates" target="_blank"<button type="button" class="btn btn-lg btn-block btn-secondary">View more currencies</button></a>
-//   </div>
-//   </div>`;
-//   generalInfo.insertAdjacentHTML("beforeend", html);
-// };
+   </div>
+   <a href="https://www.banquemisr.com/en/exchangerates" target="_blank"<button type="button" class="btn btn-lg btn-block btn-secondary">View more currencies</button></a>
+  </div>
+  </div>`;
+  generalInfo.insertAdjacentHTML("beforeend", html);
+};
 
-// // AJAX CALLS
+// AJAX CALLS
 
-// fetch(`https://api.openweathermap.org/data/2.5/weather?q=alexandria&appid=3c0286e8d77720ca91b545a49769905a&units=metric
-// `)
-//   .then((response) => response.json())
-//   .then((data) => {
-//     weather(data);
-//   });
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=alexandria&appid=3c0286e8d77720ca91b545a49769905a&units=metric
+`)
+  .then((response) => response.json())
+  .then((data) => {
+    weather(data);
+  });
 
-// fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd/egp.json
-// `)
-//   .then((response) => response.json())
-//   .then((data) => currency(data));
+fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd/egp.json
+`)
+  .then((response) => response.json())
+  .then((data) => currency(data));
